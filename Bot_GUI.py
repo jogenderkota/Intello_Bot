@@ -15,7 +15,7 @@ from PyQt4.QtCore import pyqtSlot
 vrep.simxFinish(-1) # just in case, close all opened connections
 clientID=vrep.simxStart('127.0.0.1',19999,True,True,5000,5) # Connect to V-REP
 if clientID!=-1:
-    print ('Connected to remote API server')
+    print ('Sucessfully Connected to remote API server')
 else:
     print ('Could not connect')
     sys.exit('Could not Connect')
